@@ -1,0 +1,9 @@
+-- OBTER PRODUTOS PARA A GRIDVIEW
+IF OBJECT_ID('SP_InfoProduto_ListarProdutos') IS NOT NULL
+	DROP PROCEDURE SP_InfoProduto_ListarProdutos
+GO
+CREATE PROCEDURE SP_InfoProduto_ListarProdutos
+AS
+BEGIN
+	SELECT * FROM InfoProduto
+END
